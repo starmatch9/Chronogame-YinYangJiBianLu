@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColorChange : MonoBehaviour
 {
+    //查看进度条是否结束
     public Process process;
 
     Renderer renderer;
@@ -11,6 +12,7 @@ public class ColorChange : MonoBehaviour
     private void Awake()
     {
         renderer = GetComponent<Renderer>();
+        //初始化为白色
         renderer.material.color = Color.white;
     }
     private void Update()
