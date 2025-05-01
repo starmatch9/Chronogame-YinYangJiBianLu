@@ -7,13 +7,16 @@ public class ColorChange : MonoBehaviour
     //查看进度条是否结束
     public Process process;
 
-    Renderer renderer;
+    public Color color = Color.white;
+
+    //这时渲染其
+    Renderer ren;
 
     private void Awake()
     {
-        renderer = GetComponent<Renderer>();
+        ren = GetComponent<Renderer>();
         //初始化为白色
-        renderer.material.color = Color.white;
+        ren.material.color = color;
     }
     private void Update()
     {
@@ -26,13 +29,13 @@ public class ColorChange : MonoBehaviour
     //改变颜色的方法
     private void change()
     {
-        if(renderer.material.color == Color.white)
+        if(ren.material.color == Color.white)
         {
-            renderer.material.color = Color.black;
+            ren.material.color = Color.black;
         }
         else
         {
-            renderer.material.color = Color.white;
+            ren.material.color = Color.white;
         }
     }
 }

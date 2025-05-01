@@ -25,7 +25,6 @@ public class Move : MonoBehaviour
         MoveBody();
         if (onPlatform && Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("yes");
             Jump();
         }
     }

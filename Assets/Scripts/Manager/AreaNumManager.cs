@@ -6,12 +6,15 @@ using UnityEngine.UIElements;
 
 public class AreaNumManager : MonoBehaviour
 {
+    public string sceneName;
 
     private void Update()
     {
+        //检测到游戏结束的时间节点
         if(areaNum() == 0)
         {
             Debug.Log("游戏结束！！！！");
+            SceneLoad.load(sceneName);
         }
     }
 
@@ -27,7 +30,7 @@ public class AreaNumManager : MonoBehaviour
         foreach (Transform child in allChildren)
         {
             //筛选激活的并且是对的图层
-            if(child.gameObject.active && 
+            if(child.gameObject.activeSelf && 
                 (child.gameObject.layer == LayerMask.NameToLayer("YinArea") ||
                 child.gameObject.layer == LayerMask.NameToLayer("YangArea")))
             {
