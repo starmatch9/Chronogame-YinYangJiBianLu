@@ -18,6 +18,10 @@ public class Process : MonoBehaviour
     //是否开始填充的标志
     bool fill = false;
 
+    //是否转化颜色的标志
+    [HideInInspector]
+    public bool change = false;
+
     private void Awake()
     {
         process = transform.GetComponent<Image>();
@@ -36,6 +40,7 @@ public class Process : MonoBehaviour
                 {
                     //调理完成后区域消失
                     area.SetActive(false);
+                    change = true;
                 }
             }
         }
