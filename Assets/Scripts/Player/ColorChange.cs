@@ -9,8 +9,9 @@ public class ColorChange : MonoBehaviour
 
     public Color color = Color.white;
 
-    //这时渲染其
-    Renderer ren;
+    //这是渲染器
+    [HideInInspector]
+    public Renderer ren;
 
     private void Awake()
     {

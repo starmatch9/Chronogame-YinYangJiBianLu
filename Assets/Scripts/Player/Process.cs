@@ -22,6 +22,9 @@ public class Process : MonoBehaviour
     [HideInInspector]
     public bool change = false;
 
+    //用来获取角色的颜色
+    public ColorChange cc;
+
     private void Awake()
     {
         process = transform.GetComponent<Image>();
@@ -60,11 +63,11 @@ public class Process : MonoBehaviour
     //在阴区或者阳区里时，填充标志生效
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("YinArea"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("YinArea") && cc.ren.material.color == Color.white)
         {
             fill = true;
         }
-        if (collision.gameObject.layer == LayerMask.NameToLayer("YangArea"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("YangArea") && cc.ren.material.color == Color.black)
         {
             fill = true;
         }

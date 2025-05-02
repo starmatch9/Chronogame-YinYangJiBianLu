@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   process: {fileID: 1622111175}
   color: {r: 1, g: 1, b: 1, a: 1}
+  ren: {fileID: 0}
 --- !u!212 &37114492
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2382,6 +2383,7 @@ MonoBehaviour:
   process: {fileID: 0}
   speed: 0.5
   change: 0
+  cc: {fileID: 37114491}
 --- !u!58 &1622111176
 CircleCollider2D:
   m_ObjectHideFlags: 0

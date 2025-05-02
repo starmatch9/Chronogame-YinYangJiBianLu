@@ -562,6 +562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   process: {fileID: 1553936625}
   color: {r: 1, g: 1, b: 1, a: 1}
+  ren: {fileID: 0}
 --- !u!1 &299891582
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +911,7 @@ MonoBehaviour:
   process: {fileID: 0}
   speed: 0.5
   change: 0
+  cc: {fileID: 103108346}
 --- !u!58 &1553936626
 CircleCollider2D:
   m_ObjectHideFlags: 0
