@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoad : MonoBehaviour
 {
+    public MaskLoad ml;
     //³¡¾°ÇÐ»»
     public void load(string name)
     {
@@ -13,9 +14,7 @@ public class SceneLoad : MonoBehaviour
 
     private IEnumerator loadScene(string name)
     {
-
-        Debug.Log("ÇÐ»»³¡¾°ÖÐ");
-        yield return new WaitForSeconds(4);
+        yield return StartCoroutine(ml.loadText());
         SceneManager.LoadScene(name);
     }
 }
