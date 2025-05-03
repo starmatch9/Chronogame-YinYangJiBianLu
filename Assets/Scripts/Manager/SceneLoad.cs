@@ -5,8 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoad : MonoBehaviour
 {
-    public static void load(string name)
+    //³¡¾°ÇÐ»»
+    public void load(string name)
     {
+        StartCoroutine(loadScene(name));
+    }
+
+    private IEnumerator loadScene(string name)
+    {
+
+        Debug.Log("ÇÐ»»³¡¾°ÖÐ");
+        yield return new WaitForSeconds(4);
         SceneManager.LoadScene(name);
     }
 }
