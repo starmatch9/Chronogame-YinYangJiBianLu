@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
+//区域消失在这里！！！
 public class Process : MonoBehaviour
 {
     //调理进度条（环形）
@@ -41,9 +42,9 @@ public class Process : MonoBehaviour
                 process.fillAmount = 0f;
                 if(area != null)
                 {
-                    //调理完成后区域消失
-                    area.SetActive(false);
                     change = true;
+                    //区域渐变消失
+                    StartCoroutine(areaFade(area));
                 }
             }
         }
@@ -87,6 +88,33 @@ public class Process : MonoBehaviour
             process.fillAmount = 0f;
             area = null;
         }
+    }
+
+    //区域消失协程
+    private IEnumerator areaFade(GameObject area)
+    {
+        //运行时间，用于累加
+        float elapsedTime = 0f;
+        Renderer renderer = area.GetComponent<Renderer>();
+        Color startColor = area.GetComponent<Renderer>().material.color;
+        Color endColor = new Color(startColor.r, startColor.g, startColor.b, 0f);
+
+        //让区域的碰撞器失效
+        Collider2D col = area.GetComponent<Collider2D>();
+        col.enabled = false;
+
+        while (elapsedTime < 2.0f)
+        {
+            float alpha = Mathf.Lerp(1, 0, elapsedTime / 2.0f);
+            renderer.material.color = new Color(startColor.r, startColor.g, startColor.b, alpha);
+
+            elapsedTime += Time.deltaTime;
+            //等待下一帧
+            yield return null;
+        }
+        renderer.material.color = new Color(startColor.r, startColor.g, startColor.b, 0);
+        //调理完成后区域消失
+        area.SetActive(false);
     }
 
 }
