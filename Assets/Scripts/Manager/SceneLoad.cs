@@ -14,7 +14,7 @@ public class SceneLoad : MonoBehaviour
 
     private IEnumerator loadScene(string name)
     {
-        yield return StartCoroutine(ml.loadText());
+        yield return StartCoroutine(ml.load());
         SceneManager.LoadScene(name);
     }
 }

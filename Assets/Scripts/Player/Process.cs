@@ -55,10 +55,12 @@ public class Process : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("YinArea"))
         {
             area = collision.gameObject;
+            process.color = Color.white;
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("YangArea"))
         {
             area = collision.gameObject;
+            process.color = Color.black;
         }
     }
     //在阴区或者阳区里时，填充标志生效
