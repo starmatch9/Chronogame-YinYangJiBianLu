@@ -118,5 +118,4 @@ public class Process : MonoBehaviour
         //调理完成后区域消失
         area.SetActive(false);
     }
-
 }

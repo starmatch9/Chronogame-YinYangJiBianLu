@@ -14,6 +14,7 @@ public class SceneLoad : MonoBehaviour
 
     private IEnumerator loadScene(string name)
     {
+        //加载后在进行切换
         yield return StartCoroutine(ml.load());
         SceneManager.LoadScene(name);
     }
