@@ -11,6 +11,8 @@ public class VideoFinal : MonoBehaviour
 {
     public VideoPlayer player;
 
+    public AudioSource audioSource;
+
     //挂载视频播放器的原始图像
     public RawImage videoImage;
 
@@ -86,6 +88,9 @@ public class VideoFinal : MonoBehaviour
         Color startColor = textMeshPro.color;
         Color noColor = new Color(startColor.r, startColor.g, startColor.b, 0f);
         textMeshPro.color = noColor;
+
+        //播放录音
+        audioSource.Play();
 
         //淡入0.5秒
         while (elapsedTime < 0.5f)
