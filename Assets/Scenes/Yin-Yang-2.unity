@@ -9337,7 +9337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpHigh: 3
+  jumpHigh: 4
 --- !u!50 &2063501881
 Rigidbody2D:
   serializedVersion: 4
@@ -9353,7 +9353,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 15
+  m_GravityScale: 10
   m_Material: {fileID: 6200000, guid: 3f20ebbcbcc5cef40bdfcab4173cf987, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
