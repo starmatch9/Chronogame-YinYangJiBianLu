@@ -12,6 +12,7 @@ public class VideoFinal : MonoBehaviour
     public VideoPlayer player;
 
     public AudioSource audioSource;
+    public AudioSource birdAudioSource;
 
     //挂载视频播放器的原始图像
     public RawImage videoImage;
@@ -62,6 +63,9 @@ public class VideoFinal : MonoBehaviour
         string textContent = "孤阴不生，独阳不长。\r\n阴阳共生，万物乃和。\r\n万物乘变以周行，\r\n是谓平衡之枢要。";
         yield return StartCoroutine(textLoad(textContent));
         //在文字演示结束后background的渐渐消失
+
+        //开始鸟叫
+        birdAudioSource.Play();
 
         float elapsedTime = 0f;
         while (elapsedTime < 2f)
