@@ -1,57 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
-public class BGMmanager : MonoBehaviour
+public class BGM : MonoBehaviour
 {
-    //这个存放着游戏是否结束的信息
-    //时间线：场景开始后3秒淡入，区域数量等于0时淡出
-    public AreaNumManager areaNumManager;
-
+    //参考BGMmanager脚本
     public AudioSource audioSource;
+    public VideoPlayer player;
 
-    private void Start()
+    void Start()
     {
-        StartCoroutine(load());
+        //添加监听器
+        player.loopPointReached += CheckVideoCompletion;
     }
-
-    private void Update()
+    //事件监听方法
+    void CheckVideoCompletion(VideoPlayer vp)
     {
-        if (areaNumManager.areaNum() == 0)
-        {
-            StartCoroutine(fade());
-        }
+        //虽然不知道原理是什么，但是很好用（感谢豆包）
+        StartCoroutine(load());
     }
     //淡入
     private IEnumerator load()
     {
         //设置开始音量为0
         audioSource.volume = 0f;
-
-        //等3秒文字时间后开始播放
-        yield return new WaitForSeconds(3f);
         audioSource.Play();
         //累计时间
         float elapsed = 0;
-        while (elapsed < 2f)
+        while (elapsed < 5f)
         {
-            audioSource.volume = Mathf.Lerp(0f, 0.2f, elapsed / 2f);
+            audioSource.volume = Mathf.Lerp(0f, 0.1f, elapsed / 5f);
             //增量
             elapsed += Time.deltaTime;
             yield return null;
         }
-        audioSource.volume = 0.2f;
+        audioSource.volume = 0.1f;
     }
     //淡出
     private IEnumerator fade()
     {
-        //定为标准的0.2
-        audioSource.volume = 0.2f;
+        //定为标准的1
+        audioSource.volume = 0.1f;
         //累计时间
         float elapsed = 0;
         while (elapsed < 1f)
         {
-            audioSource.volume = Mathf.Lerp(0.2f, 0f, elapsed / 1f);
+            audioSource.volume = Mathf.Lerp(0.1f, 0f, elapsed / 1f);
             //增量
             elapsed += Time.deltaTime;
             yield return null;
