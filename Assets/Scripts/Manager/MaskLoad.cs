@@ -50,7 +50,7 @@ public class MaskLoad : MonoBehaviour
         string textContent = textContent1 + "\n" + textContent2 +"\n" + textContent3;
         StartCoroutine(textLoad(textContent));
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(3f);
         //运行时间，用于累加
         float elapsedTime = 0f;
         image.color = new Color(0f, 0f, 0f, 0f);
@@ -74,7 +74,6 @@ public class MaskLoad : MonoBehaviour
         if (player != null)
         {
             player.GetComponent<Move>().enabled = true;
-            Debug.Log("为什么不能动！");
         }
     }
     //文本淡入淡出
@@ -88,8 +87,6 @@ public class MaskLoad : MonoBehaviour
         Color startColor = textMeshPro.color;
         Color noColor = new Color(startColor.r, startColor.g, startColor.b, 0f);
         textMeshPro.color = noColor;
-
-        Debug.Log("加载文本中");
 
         //淡入0.5秒
         while (elapsedTime < 0.5f)
