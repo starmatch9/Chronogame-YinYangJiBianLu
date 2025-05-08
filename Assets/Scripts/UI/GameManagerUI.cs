@@ -13,9 +13,9 @@ public class GameManagerUI : MonoBehaviour
 
 
     //选择关卡的方法
-    public void selectLevel()
+    public void selectLevel(string name)
     {
-
+        SceneManager.LoadScene(name);
     }
 
 
