@@ -13,9 +13,14 @@ public class LockCheck : MonoBehaviour
         {
             if (child.CompareTag("Lock"))
             {
+                //½âËø
                 if(PlayerPrefs.GetInt(name, 0) == 1)
                 {
                     child.gameObject.SetActive(false);
+                }
+                else
+                {
+                    child.gameObject.SetActive(true);
                 }
             }
         }

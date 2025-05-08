@@ -16,10 +16,5 @@ public class Unlock : MonoBehaviour
         // 调用 Save 方法将数据写入磁盘
         PlayerPrefs.Save();
 
-        // 加载测试
-        if( PlayerPrefs.GetInt(name, 0) == 1)
-        {
-            Debug.Log("成了");
-        }
     }
 }

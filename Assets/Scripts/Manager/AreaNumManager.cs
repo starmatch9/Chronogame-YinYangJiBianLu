@@ -15,7 +15,6 @@ public class AreaNumManager : MonoBehaviour
         //检测到游戏结束的时间节点
         if(areaNum() == 0)
         {
-            Debug.Log("游戏结束！！！！");
             sl.load(sceneName);
         }
     }
