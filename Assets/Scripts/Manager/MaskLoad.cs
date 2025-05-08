@@ -22,9 +22,10 @@ public class MaskLoad : MonoBehaviour
         //场景开始淡出
         StartCoroutine(fade());
     }
-    //将文本移到外部独立实现
+    //游戏结束加载黑色
     public IEnumerator load()
     {
+        image.gameObject.SetActive(true);
         //运行时间，用于累加
         float elapsedTime = 0f;
         image.color = new Color(0f, 0f, 0f, 0f);
@@ -44,6 +45,7 @@ public class MaskLoad : MonoBehaviour
         image.color = midColor;
     }
 
+    //游戏开始黑色渐出
     public IEnumerator fade()
     {
         //引入文字显示
@@ -75,6 +77,7 @@ public class MaskLoad : MonoBehaviour
         {
             player.GetComponent<Move>().enabled = true;
         }
+        image.gameObject.SetActive(false);
     }
     //文本淡入淡出
     public IEnumerator textLoad(string content)

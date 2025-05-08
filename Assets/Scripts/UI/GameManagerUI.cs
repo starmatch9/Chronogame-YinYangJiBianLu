@@ -22,6 +22,10 @@ public class GameManagerUI : MonoBehaviour
     //退出游戏的方法
     public void exitGame()
     {
-        Application.Quit();
+        //退出
+        //Application.Quit();
+
+        //测试——删除所有保存的数据
+        PlayerPrefs.DeleteAll();
     }
 }
