@@ -23,7 +23,7 @@ public class Move : MonoBehaviour
     void Update()
     {
         MoveBody();
-        if (onPlatform && Input.GetKey(KeyCode.Space))
+        if (onPlatform && Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }

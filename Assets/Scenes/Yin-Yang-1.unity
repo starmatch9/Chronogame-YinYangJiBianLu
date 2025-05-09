@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 797634}
   - component: {fileID: 797633}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,16 +232,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1847576188}
-        m_TargetAssemblyTypeName: GameManagerUI, Assembly-CSharp
-        m_MethodName: exitGame
-        m_Mode: 1
+      - m_Target: {fileID: 1847576182}
+        m_TargetAssemblyTypeName: SceneLoad, Assembly-CSharp
+        m_MethodName: load
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Yin-Yang-1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &797635
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u9000\u51FA\u6E38\u620F"
+  m_text: "\u91CD\u65B0\u5F00\u59CB"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f24fa3c447de9464da833e178ab2d50c, type: 2}
   m_sharedMaterial: {fileID: -3642315618984938381, guid: f24fa3c447de9464da833e178ab2d50c, type: 2}
@@ -7389,7 +7389,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1701325877}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3f20ebbcbcc5cef40bdfcab4173cf987, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

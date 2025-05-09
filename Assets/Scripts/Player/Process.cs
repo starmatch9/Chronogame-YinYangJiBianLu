@@ -23,6 +23,10 @@ public class Process : MonoBehaviour
     [HideInInspector]
     public bool change = false;
 
+    //true代表区域为白色，false代表区域为黑色
+    [HideInInspector]
+    public bool color = true;
+
     //用来获取角色的颜色
     public ColorChange cc;
 
@@ -54,11 +58,17 @@ public class Process : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("YinArea"))
         {
+            //区域颜色为黑色
+            color = false;
+
             area = collision.gameObject;
             process.color = Color.white;
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("YangArea"))
         {
+            //区域颜色为白色
+            color = true;
+
             area = collision.gameObject;
             process.color = Color.black;
         }
@@ -66,11 +76,11 @@ public class Process : MonoBehaviour
     //在阴区或者阳区里时，填充标志生效
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("YinArea") && cc.ren.material.color == Color.white)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("YinArea") /*&& cc.ren.material.color == Color.white*/)
         {
             fill = true;
         }
-        if (collision.gameObject.layer == LayerMask.NameToLayer("YangArea") && cc.ren.material.color == Color.black)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("YangArea") /*&& cc.ren.material.color == Color.black*/)
         {
             fill = true;
         }

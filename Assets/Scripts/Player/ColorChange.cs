@@ -29,10 +29,81 @@ public class ColorChange : MonoBehaviour
     {
         if (process.change)
         {
+            sfx.sfxPlay();
             process.change = false;
-            change();
-            GouYu1.changeYinYang();
-            GouYu2.changeYinYang();
+            if (ren.material.color == Color.white)
+            {
+                //物体为白色时，检测区域的颜色，要也是白，再看勾玉2激活没有
+                //激活了，取消激活转化为黑，没激活，激活
+                //区域要是黑色，激活了，取消激活，没激活转化为黑
+                if (process.color)
+                {
+                    if (GouYu2.transform.gameObject.activeSelf)
+                    {
+                        GouYu2.transform.gameObject.SetActive(false);
+                        change();
+                        GouYu1.changeYinYang();
+                        GouYu2.changeYinYang();
+                    }
+                    else
+                    {
+                        GouYu2.transform.gameObject.SetActive(true);
+                    }
+                }
+                else
+                {
+                    if (GouYu2.transform.gameObject.activeSelf)
+                    {
+                        GouYu2.transform.gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        change();
+                        GouYu1.changeYinYang();
+                        GouYu2.changeYinYang();
+                    }
+                }
+
+
+            }
+            else if(ren.material.color == Color.black)
+            {
+                //物体为黑色时，检测区域的颜色
+                //要是白色，激活了，取消激活，没激活，转化颜色
+                //要是黑色，激活了，取消激活转化颜色，没激活，激活
+                if (process.color)
+                {
+                    if (GouYu2.transform.gameObject.activeSelf)
+                    {
+                        GouYu2.transform.gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        change();
+                        GouYu1.changeYinYang();
+                        GouYu2.changeYinYang();
+                    }
+                }
+                else
+                {
+                    if (GouYu2.transform.gameObject.activeSelf)
+                    {
+                        GouYu2.transform.gameObject.SetActive(false);
+                        change();
+                        GouYu1.changeYinYang();
+                        GouYu2.changeYinYang();
+                    }
+                    else
+                    {
+                        GouYu2.transform.gameObject.SetActive(true);
+                    }
+                }
+
+            }
+            //process.change = false;
+            //change();
+            //GouYu1.changeYinYang();
+            //GouYu2.changeYinYang();
         }
     }
     //改变颜色的方法
@@ -46,6 +117,5 @@ public class ColorChange : MonoBehaviour
         {
             ren.material.color = Color.white;
         }
-        sfx.sfxPlay();
     }
 }
