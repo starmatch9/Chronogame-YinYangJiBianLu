@@ -11,6 +11,10 @@ public class ColorChange : MonoBehaviour
 
     public SFX sfx;
 
+    //两个勾玉
+    public GouYu GouYu1;
+    public GouYu GouYu2;
+
     //这是渲染器
     [HideInInspector]
     public Renderer ren;
@@ -27,6 +31,8 @@ public class ColorChange : MonoBehaviour
         {
             process.change = false;
             change();
+            GouYu1.changeYinYang();
+            GouYu2.changeYinYang();
         }
     }
     //改变颜色的方法
