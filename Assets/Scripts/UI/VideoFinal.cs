@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
@@ -28,8 +29,22 @@ public class VideoFinal : MonoBehaviour
         player.loopPointReached += CheckVideoCompletion;
 
         image = GetComponent<Image>();
-        //加载文字的方法
-        StartCoroutine(play());
+
+        //不是1就是首次加载
+        if (!PlayerPrefs.HasKey("video"))
+        {
+            //加载视频的方法
+            StartCoroutine(play());
+        }
+        else
+        {
+            //不是首次加载,禁用物体,此前先让鸟叫开始
+            birdAudioSource.Play();
+
+            gameObject.transform.parent.gameObject.SetActive(false);
+        }
+
+
     }
     //事件监听方法
     void CheckVideoCompletion(VideoPlayer vp)
@@ -78,6 +93,10 @@ public class VideoFinal : MonoBehaviour
         }
         //下一帧销毁有关对象
         yield return null;
+
+        PlayerPrefs.SetInt("video", 1);
+        PlayerPrefs.Save();
+
         gameObject.transform.parent.gameObject.SetActive(false);
 
     }

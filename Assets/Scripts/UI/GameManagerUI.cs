@@ -22,6 +22,9 @@ public class GameManagerUI : MonoBehaviour
     //退出游戏的方法
     public void exitGame()
     {
+        //删掉首次播放开头动画的标志
+        PlayerPrefs.DeleteKey("video");
+
         //退出
         //Application.Quit();
 

@@ -13,6 +13,13 @@ public class BGM : MonoBehaviour
     {
         //添加监听器
         player.loopPointReached += CheckVideoCompletion;
+
+        //不是1就是首次加载
+        if (PlayerPrefs.HasKey("video"))
+        {
+            StartCoroutine(load());
+        }
+
     }
     //事件监听方法
     void CheckVideoCompletion(VideoPlayer vp)
