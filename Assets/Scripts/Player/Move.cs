@@ -23,7 +23,7 @@ public class Move : MonoBehaviour
     void Update()
     {
         MoveBody();
-        if (onPlatform && Input.GetKeyDown(KeyCode.Space))
+        if (onPlatform && Input.GetKey(KeyCode.Space))
         {
             Jump();
         }
@@ -44,21 +44,21 @@ public class Move : MonoBehaviour
     }
 
     //Åö×²¼ì²â
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
         {
             onPlatform = true;
         }
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
         {
             onPlatform = true;
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
         {

@@ -9,12 +9,6 @@ public class SFX : MonoBehaviour
     //调节音量
     public float volume = 0.3f;
 
-    private void Awake()
-    {
-        //此方法可以保证切换场景时不销毁
-        DontDestroyOnLoad(gameObject);
-    }
-
     public void sfxPlay()
     {
         //在摄像机位置附件播放

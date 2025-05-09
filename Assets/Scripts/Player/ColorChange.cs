@@ -9,6 +9,8 @@ public class ColorChange : MonoBehaviour
 
     public Color color = Color.white;
 
+    public SFX sfx;
+
     //’‚ «‰÷»æ∆˜
     [HideInInspector]
     public Renderer ren;
@@ -38,5 +40,6 @@ public class ColorChange : MonoBehaviour
         {
             ren.material.color = Color.white;
         }
+        sfx.sfxPlay();
     }
 }
