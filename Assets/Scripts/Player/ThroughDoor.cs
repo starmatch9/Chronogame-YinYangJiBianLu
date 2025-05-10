@@ -15,11 +15,11 @@ public class ThroughDoor : MonoBehaviour
     //用来记录玩家进入前的位置，从而让其无法进入阴阳门
     Vector3 previousPosition;
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (isCheck)
         {
-            //每一步长检测一次玩家位置
+            //每次检测一次玩家位置
             previousPosition = transform.position;
         }  
     }
