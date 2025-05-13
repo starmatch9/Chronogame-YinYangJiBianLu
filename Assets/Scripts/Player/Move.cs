@@ -13,8 +13,14 @@ public class Move : MonoBehaviour
     Rigidbody2D body;
     Vector2 movement = new Vector2();
 
+    //获取角色渲染器
+    public SpriteRenderer spriteRenderer;
+
     //检测是否在平台上
     bool onPlatform;
+
+    //动画器
+    public Animator animator;
 
     void Start()
     {
@@ -33,6 +39,19 @@ public class Move : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.Normalize();
+        //反转
+        if (movement.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (movement.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        // 根据是否有水平输入来控制跑步动画
+        bool hasHorizontalInput = Mathf.Abs(movement.x) > 0.1f; // 阈值避免浮点数误差
+        animator.SetBool("isRun", hasHorizontalInput);
+
         body.velocity = new Vector2(movement.x * speed, body.velocity.y);
     }
     //跳

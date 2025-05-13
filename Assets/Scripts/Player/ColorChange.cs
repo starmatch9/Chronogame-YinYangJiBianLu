@@ -17,13 +17,17 @@ public class ColorChange : MonoBehaviour
 
     //这是渲染器
     [HideInInspector]
-    public Renderer ren;
+    public SpriteRenderer ren;
+
+    //两条鱼的图像
+    public Sprite YangYu;
+    public Sprite YinYu;
 
     private void Awake()
     {
-        ren = GetComponent<Renderer>();
-        //初始化为白色
-        ren.material.color = color;
+        ren = GetComponent<SpriteRenderer>();
+        //初始化为阳鱼
+        ren.sprite = YangYu;
     }
     private void Update()
     {
@@ -31,7 +35,7 @@ public class ColorChange : MonoBehaviour
         {
             sfx.sfxPlay();
             process.change = false;
-            if (ren.material.color == Color.white)
+            if (ren.sprite == YangYu)
             {
                 //物体为白色时，检测区域的颜色，要也是白，再看勾玉2激活没有
                 //激活了，取消激活转化为黑，没激活，激活
@@ -66,7 +70,7 @@ public class ColorChange : MonoBehaviour
 
 
             }
-            else if(ren.material.color == Color.black)
+            else if(ren.sprite == YinYu)
             {
                 //物体为黑色时，检测区域的颜色
                 //要是白色，激活了，取消激活，没激活，转化颜色
@@ -109,13 +113,13 @@ public class ColorChange : MonoBehaviour
     //改变颜色的方法
     private void change()
     {
-        if(ren.material.color == Color.white)
+        if(ren.sprite == YangYu)
         {
-            ren.material.color = Color.black;
+            ren.sprite = YinYu;
         }
         else
         {
-            ren.material.color = Color.white;
+            ren.sprite = YangYu;
         }
     }
 }
