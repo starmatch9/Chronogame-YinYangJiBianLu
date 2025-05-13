@@ -32,7 +32,7 @@ public class ThroughDoor : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("YinDoor"))
         {
             //如果玩家是“阴”能穿过，“阳”不行,只锁定横向位置即可
-            if(cc.ren.material.color == Color.white)
+            if(cc.ren.sprite == cc.YangYu)
             {
                 transform.position = new Vector3(previousPosition.x, transform.position.y, transform.position.z);
             }
@@ -40,7 +40,7 @@ public class ThroughDoor : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("YangDoor"))
         {
             //同理
-            if (cc.ren.material.color == Color.black)
+            if (cc.ren.sprite == cc.YinYu)
             {
                 transform.position = new Vector3(previousPosition.x, transform.position.y, transform.position.z);
             }
@@ -53,7 +53,7 @@ public class ThroughDoor : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("YinDoor"))
         {
             //如果玩家是“阴”能穿过，“阳”不行
-            if (cc.ren.material.color == Color.white)
+            if (cc.ren.sprite == cc.YangYu)
             {
                 transform.position = new Vector3(previousPosition.x, transform.position.y, transform.position.z);
             }
@@ -61,7 +61,7 @@ public class ThroughDoor : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("YangDoor"))
         {
             //同理
-            if (cc.ren.material.color == Color.black)
+            if (cc.ren.sprite == cc.YinYu)
             {
                 transform.position = new Vector3(previousPosition.x, transform.position.y, transform.position.z);
             }
