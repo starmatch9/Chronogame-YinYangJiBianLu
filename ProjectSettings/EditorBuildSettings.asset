@@ -9,19 +9,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Yin-Yang-1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Yin-Yang-2.unity
+    path: Assets/Scenes/Yin-Yang-5.unity
     guid: 48672714123d8cd43a1b26269766c90a
   - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: bbfed87e2151cb7429eb007644da9731
   - enabled: 1
-    path: Assets/Scenes/Yin-Yang-3.unity
+    path: Assets/Scenes/Yin-Yang-6.unity
     guid: 893dcf72cfc2f8448835f1301f06da88
   - enabled: 1
-    path: Assets/Scenes/Yin-Yang-4.unity
+    path: Assets/Scenes/Yin-Yang-2.unity
     guid: 07a452ffb9b17a947acfe2f56da262c0
   - enabled: 1
-    path: Assets/Scenes/Yin-Yang-5.unity
+    path: Assets/Scenes/Yin-Yang-test.unity
     guid: 721140998ad0e3a4f98661fb93346517
   - enabled: 1
     path: Assets/Scenes/Yin-Yang-6.unity

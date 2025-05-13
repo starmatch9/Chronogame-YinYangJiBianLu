@@ -17840,7 +17840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpHigh: 4
+  jumpHigh: 3
   spriteRenderer: {fileID: 1279072897}
   animator: {fileID: 1279072895}
 --- !u!50 &2090598936

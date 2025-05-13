@@ -1862,7 +1862,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4241584821919405697, guid: 8ee05798afc231f458c325a2fe6c6699, type: 3}
       propertyPath: m_text
-      value: "\u6309\u4E0B\u201C\u7A7A\u683C\u201D\u8DF3\u8DC3"
+      value: "\u6B32\u817E\u8DC3\u8005\uFF0C\n\u51FB\u7A7A\u683C\u4E4B\u952E\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 4241584821919405697, guid: 8ee05798afc231f458c325a2fe6c6699, type: 3}
       propertyPath: m_fontAsset
@@ -8540,7 +8540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpHigh: 4
+  jumpHigh: 3
   spriteRenderer: {fileID: 103108345}
   animator: {fileID: 103108348}
 --- !u!50 &1701325880
