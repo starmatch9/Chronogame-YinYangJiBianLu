@@ -17160,9 +17160,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   process: {fileID: 804874204}
   color: {r: 1, g: 1, b: 1, a: 1}
-  sfx: {fileID: 0}
-  GouYu1: {fileID: 0}
-  GouYu2: {fileID: 0}
+  sfx: {fileID: 789275106}
+  GouYu1: {fileID: 2075190444}
+  GouYu2: {fileID: 2124246890}
   ren: {fileID: 0}
   YangYu: {fileID: 21300000, guid: c7baf0c9af4b4d640b4b29d523735dc1, type: 3}
   YinYu: {fileID: 21300000, guid: 7508b3419701b0244ab9d48cc4eb6d5c, type: 3}

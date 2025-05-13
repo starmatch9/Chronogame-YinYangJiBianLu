@@ -4256,7 +4256,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 1606460898}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3f20ebbcbcc5cef40bdfcab4173cf987, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7755,9 +7755,13 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 341
     m_Data: {fileID: 11400000, guid: 5b432bcdd28b4164ba99f364aaa824f6, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 341
     m_Data: {fileID: 7482667652216324306, guid: 52546e2b4a5e9e3478c6212b9f622f4b, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 341
     m_Data:
@@ -7782,7 +7786,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -18, y: -11, z: 0}
   m_Size: {x: 36, y: 22, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
