@@ -26,9 +26,9 @@ public class GameManagerUI : MonoBehaviour
         PlayerPrefs.DeleteKey("video");
 
         //退出
-        //Application.Quit();
+        Application.Quit();
 
         //测试——删除所有保存的数据
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
     }
 }
