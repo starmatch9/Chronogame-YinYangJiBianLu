@@ -1,9 +1,9 @@
-using UnityEditor;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildTools
+public class TestPlayerPrefs : MonoBehaviour
 {
-    [MenuItem("Build/Clear PlayerPrefs & Run Build")]
     public static void ClearPlayerPrefsAndBuild()
     {
         // 清除所有PlayerPrefs数据
