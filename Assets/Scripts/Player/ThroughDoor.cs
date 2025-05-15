@@ -21,7 +21,7 @@ public class ThroughDoor : MonoBehaviour
         {
             //每次检测一次玩家位置
             previousPosition = transform.position;
-        }  
+        }
     }
 
     //检测到对方是门
