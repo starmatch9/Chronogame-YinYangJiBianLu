@@ -66,10 +66,10 @@ public class End : MonoBehaviour
 
         SceneManager.LoadScene("Start");
 
-        while (elapsedTime < 6.0f)
+        while (elapsedTime < 3.0f)
         {
             //按照百分比从0到1插值
-            float c = Mathf.Lerp(1, 0, elapsedTime / 6.0f);
+            float c = Mathf.Lerp(1, 0, elapsedTime / 3.0f);
             background.color = new Color(0f, 0f, 0f, c);
             elapsedTime += Time.deltaTime;
             //等待下一帧
