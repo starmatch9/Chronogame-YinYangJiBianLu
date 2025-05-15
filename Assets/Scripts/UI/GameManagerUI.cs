@@ -25,9 +25,17 @@ public class GameManagerUI : MonoBehaviour
     public Image step6;
     public TextMeshProUGUI step6t;
     public TextMeshProUGUI step7;
+    public TextMeshProUGUI step8;
 
-
-
+    public TextMeshProUGUI process;
+    public Image i1;
+    public TextMeshProUGUI t1;
+    public Image i2;
+    public TextMeshProUGUI t2;
+    public Image i3;
+    public TextMeshProUGUI t3;
+    public Image i4;
+    public TextMeshProUGUI t4;
 
     //开始游戏的方法
     public void newGame()
@@ -101,20 +109,79 @@ public class GameManagerUI : MonoBehaviour
 
         yield return new WaitForSeconds(5f);
 
+        StartCoroutine(imageFade(step1));
+        StartCoroutine(textFade(step2));
+        StartCoroutine(textFade(step3));
+        StartCoroutine(imageFade(step4));
+        StartCoroutine(textFade(step4t));
+        StartCoroutine(imageFade(step5));
+        yield return StartCoroutine(textFade(step5t));
+
+        yield return new WaitForSeconds(2f);
+
+        StartCoroutine(imageLoad(step6));
+        yield return StartCoroutine(textLoad(step6t));
+
+        yield return new WaitForSeconds(3f);
+
+        yield return StartCoroutine(textLoad(step7));
+
+        yield return new WaitForSeconds(5f);
+
+        StartCoroutine(textLoad(step8));
+
+        while (!Input.GetMouseButtonDown(0))
+        {
+            yield return null;
+        }
+
+        StartCoroutine(imageFade(step6));
+        StartCoroutine(textFade(step6t));
+        StartCoroutine(textFade(step7));
+        yield return StartCoroutine(textFade(step8));
+
+        StartCoroutine(imageLoad(i1));
+        StartCoroutine(textLoad(t1));
+        StartCoroutine(imageLoad(i2));
+        StartCoroutine(textLoad(t2));
+        yield return StartCoroutine(textLoad(process));
+
+        StartCoroutine(textLoad(step8));
+        while (!Input.GetMouseButtonDown(0))
+        {
+            yield return null;
+        }
+
+        StartCoroutine(imageFade(i1));
+        StartCoroutine(textFade(t1));
+        StartCoroutine(imageFade(i2));
+        StartCoroutine(textFade(t2));
+
+        yield return StartCoroutine(textFade(step8));
+
+        StartCoroutine(imageLoad(i3));
+        StartCoroutine(textLoad(t3));
+        StartCoroutine(imageLoad(i4));
+        yield return StartCoroutine(textLoad(t4));
+
+        StartCoroutine(textLoad(step8));
+        while (!Input.GetMouseButtonDown(0))
+        {
+            yield return null;
+        }
+
+        StartCoroutine(imageFade(i3));
+        StartCoroutine(textFade(t3));
+        StartCoroutine(imageFade(i4));
+        StartCoroutine(textFade(t4));
+
+        StartCoroutine(textFade(process));
+        yield return StartCoroutine(textFade(step8));
 
 
-
-
-
-
-
-
-
-
-
-
-        yield return null;
-        //SceneManager.LoadScene("Yin-Yang-1");
+        yield return StartCoroutine(bgmStop());
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Yin-Yang-1");
     }
 
     public IEnumerator bgmPlay()
@@ -133,6 +200,20 @@ public class GameManagerUI : MonoBehaviour
             yield return null;
         }
         teachBGM.volume = 0.05f;
+    }
+
+    public IEnumerator bgmStop()
+    {
+        //累计时间
+        float elapsed = 0;
+        while (elapsed < 1f)
+        {
+            teachBGM.volume = Mathf.Lerp(0.05f, 0f, elapsed / 1f);
+            //增量
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        teachBGM.volume = 0f;
     }
 
     //文本淡入
@@ -196,7 +277,7 @@ public class GameManagerUI : MonoBehaviour
         image.color = new Color(startColor.r, startColor.g, startColor.b, 1f);
     }
     //文本淡出
-    public IEnumerator imagetFade(Image image)
+    public IEnumerator imageFade(Image image)
     {
         //运行时间
         float elapsedTime = 0f;
