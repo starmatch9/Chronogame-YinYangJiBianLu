@@ -1767,7 +1767,7 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4199,7 +4199,7 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -20492,6 +20492,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ae7b16e284e1b4abda44a91afb91e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teachObject: {fileID: 0}
+  bird: {fileID: 0}
+  bgm: {fileID: 0}
+  teachBGM: {fileID: 0}
+  step1: {fileID: 0}
+  step2: {fileID: 0}
+  step3: {fileID: 0}
+  step4: {fileID: 0}
+  step4t: {fileID: 0}
+  step5: {fileID: 0}
+  step5t: {fileID: 0}
+  step6: {fileID: 0}
+  step6t: {fileID: 0}
+  step7: {fileID: 0}
+  step8: {fileID: 0}
+  process: {fileID: 0}
+  i1: {fileID: 0}
+  t1: {fileID: 0}
+  i2: {fileID: 0}
+  t2: {fileID: 0}
+  i3: {fileID: 0}
+  t3: {fileID: 0}
+  i4: {fileID: 0}
+  t4: {fileID: 0}
 --- !u!114 &1861819093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21165,6 +21189,7 @@ GameObject:
   - component: {fileID: 2090598936}
   - component: {fileID: 2090598935}
   - component: {fileID: 2090598934}
+  - component: {fileID: 2090598940}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -21179,7 +21204,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090598933}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb10a29d2b71ff94e805045916afc04b, type: 3}
   m_Name: 
@@ -21315,6 +21340,21 @@ Transform:
   - {fileID: 1278263699}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2090598940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090598933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4fc37d30ae7a3439cc43614fbc3e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cc: {fileID: 1279072894}
+  yangDoorCol: {fileID: 961566391}
+  yinDoorCol: {fileID: 470780589}
 --- !u!1 &2144125835
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,35 +9,21 @@ public class ThroughDoorNew : MonoBehaviour
     //用来获取角色的颜色
     public ColorChange cc;
 
-    public Collider2D doorCol;
-    
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("YinDoor"))
-        {
-            if(cc.ren.sprite == cc.YangYu)
-            {
-                doorCol = collision;
-                collision.enabled = false;
-            }
-        }
-        if (collision.gameObject.layer == LayerMask.NameToLayer("YangDoor"))
-        {
-            //同理
-            if (cc.ren.sprite == cc.YinYu)
-            {
-                doorCol = collision;
-                collision.enabled = false;
-            }
-        }
-    }
+    public Collider2D yangDoorCol;
+    public Collider2D yinDoorCol;
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void Update()
     {
-        //if (collision == doorCol)
-        //{
-            collision.enabled = true;
-            doorCol = null;
-        //}
+        if (cc.ren.sprite == cc.YangYu)
+        {
+            yinDoorCol.enabled = true;
+            yangDoorCol.enabled = false;
+        }
+        if (cc.ren.sprite == cc.YinYu)
+        {
+            yinDoorCol.enabled = false;
+            yangDoorCol.enabled = true;
+
+        }
     }
 }
