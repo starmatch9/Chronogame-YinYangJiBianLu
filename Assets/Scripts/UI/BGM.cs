@@ -24,7 +24,7 @@ public class BGM : MonoBehaviour
     //事件监听方法
     void CheckVideoCompletion(VideoPlayer vp)
     {
-        //虽然不知道原理是什么，但是很好用（感谢豆包）
+        //虽然不知道原理是什么，但是很好用
         StartCoroutine(load());
     }
     //淡入
@@ -37,23 +37,23 @@ public class BGM : MonoBehaviour
         float elapsed = 0;
         while (elapsed < 5f)
         {
-            audioSource.volume = Mathf.Lerp(0f, 0.1f, elapsed / 5f);
+            audioSource.volume = Mathf.Lerp(0f, 0.05f, elapsed / 5f);
             //增量
             elapsed += Time.deltaTime;
             yield return null;
         }
-        audioSource.volume = 0.1f;
+        audioSource.volume = 0.05f;
     }
     //淡出
     private IEnumerator fade()
     {
         //定为标准的1
-        audioSource.volume = 0.1f;
+        audioSource.volume = 0.05f;
         //累计时间
         float elapsed = 0;
         while (elapsed < 1f)
         {
-            audioSource.volume = Mathf.Lerp(0.1f, 0f, elapsed / 1f);
+            audioSource.volume = Mathf.Lerp(0.05f, 0f, elapsed / 1f);
             //增量
             elapsed += Time.deltaTime;
             yield return null;

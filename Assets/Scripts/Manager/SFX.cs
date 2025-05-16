@@ -7,7 +7,7 @@ public class SFX : MonoBehaviour
     //选择音效
     public AudioClip sfx;
     //调节音量
-    public float volume = 0.3f;
+    float volume = 0.1f;
 
     public void sfxPlay()
     {
