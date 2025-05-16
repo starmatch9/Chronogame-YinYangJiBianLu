@@ -1843,7 +1843,7 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4137,7 +4137,7 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13838,8 +13838,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 675146231
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c7baf0c9af4b4d640b4b29d523735dc1, type: 3}
   m_Color: {r: 1, g: 0.9669811, b: 0.9669811, a: 1}
@@ -20314,7 +20314,7 @@ GameObject:
   - component: {fileID: 2090598937}
   - component: {fileID: 2090598936}
   - component: {fileID: 2090598935}
-  - component: {fileID: 2090598934}
+  - component: {fileID: 2090598940}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -20322,19 +20322,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2090598934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090598933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb10a29d2b71ff94e805045916afc04b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cc: {fileID: 1279072894}
 --- !u!114 &2090598935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20465,6 +20452,21 @@ Transform:
   - {fileID: 1278263699}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2090598940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090598933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4fc37d30ae7a3439cc43614fbc3e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cc: {fileID: 1279072894}
+  yangDoorCol: {fileID: 961566391}
+  yinDoorCol: {fileID: 470780589}
 --- !u!1 &2144125835
 GameObject:
   m_ObjectHideFlags: 0

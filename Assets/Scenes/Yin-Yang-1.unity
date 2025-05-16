@@ -8713,10 +8713,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1701325877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb10a29d2b71ff94e805045916afc04b, type: 3}
+  m_Script: {fileID: 11500000, guid: fb4fc37d30ae7a3439cc43614fbc3e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cc: {fileID: 103108346}
+  yangDoorCol: {fileID: 0}
+  yinDoorCol: {fileID: 0}
 --- !u!1 &1757183129
 GameObject:
   m_ObjectHideFlags: 0
@@ -8964,7 +8966,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 1.5833333, y: 1.5833333, z: 0}
+  m_ChunkCullingBounds: {x: 1.5833333, y: 2.4166665, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
