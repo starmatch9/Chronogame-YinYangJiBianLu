@@ -38,6 +38,8 @@ public class Move : MonoBehaviour
     //左右移动
     private void MoveBody()
     {
+        body.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.Normalize();
         //反转
@@ -53,7 +55,13 @@ public class Move : MonoBehaviour
         bool hasHorizontalInput = Mathf.Abs(movement.x) > 0.1f; // 阈值避免浮点数误差
         animator.SetBool("isRun", hasHorizontalInput);
 
+        if (!hasHorizontalInput)
+        {
+            body.constraints |= RigidbodyConstraints2D.FreezePositionX;
+
+        }
         body.velocity = new Vector2(movement.x * speed, body.velocity.y);
+
     }
     //跳
     private void Jump()
