@@ -35,23 +35,23 @@ public class BGMmanager : MonoBehaviour
         float elapsed = 0;
         while (elapsed < 2f)
         {
-            audioSource.volume = Mathf.Lerp(0f, 0.2f, elapsed / 2f);
+            audioSource.volume = Mathf.Lerp(0f, 0.05f, elapsed / 2f);
             //增量
             elapsed += Time.deltaTime;
             yield return null;
         }
-        audioSource.volume = 0.2f;
+        audioSource.volume = 0.05f;
     }
     //淡出
     private IEnumerator fade()
     {
         //定为标准的0.2
-        audioSource.volume = 0.2f;
+        audioSource.volume = 0.05f;
         //累计时间
         float elapsed = 0;
         while (elapsed < 1f)
         {
-            audioSource.volume = Mathf.Lerp(0.2f, 0f, elapsed / 1f);
+            audioSource.volume = Mathf.Lerp(0.05f, 0f, elapsed / 1f);
             //增量
             elapsed += Time.deltaTime;
             yield return null;
