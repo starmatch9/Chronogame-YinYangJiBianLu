@@ -9,15 +9,19 @@
 
 #### 开发工具
 1、Unity 2022.3.57f1c1
+
 2、Adobe Photoshop
 
 #### 网络资源使用列表
 1、部分UI图标：Simple UI Elements（https://assetstore-fallback.unity.com/packages/2d/gui/icons/simple-ui-elements-53276）
+
 2、游戏音效：FREE Casual Game SFX Pack （https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116）
+
 3、鸟叫声：Sounds of Australia - Natural ambiences （https://assetstore-fallback.unity.com/packages/audio/ambient/nature/sounds-of-australia-natural-ambiences-239337）
 
 #### AI工具使用列表
 1、BGM：海绵音乐-AI写歌 （www.haimian.com）
+
 2、开场动画：Magi AI （magi.sand.ai）
 
 ------------
