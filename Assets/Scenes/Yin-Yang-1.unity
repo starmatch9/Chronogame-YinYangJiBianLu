@@ -9789,6 +9789,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ae7b16e284e1b4abda44a91afb91e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teachObject: {fileID: 0}
+  bird: {fileID: 0}
+  bgm: {fileID: 0}
+  teachBGM: {fileID: 0}
+  step1: {fileID: 0}
+  step2: {fileID: 0}
+  step3: {fileID: 0}
+  step4: {fileID: 0}
+  step4t: {fileID: 0}
+  step5: {fileID: 0}
+  step5t: {fileID: 0}
+  step6: {fileID: 0}
+  step6t: {fileID: 0}
+  step7: {fileID: 0}
+  step8: {fileID: 0}
+  process: {fileID: 0}
+  i1: {fileID: 0}
+  t1: {fileID: 0}
+  i2: {fileID: 0}
+  t2: {fileID: 0}
+  i3: {fileID: 0}
+  t3: {fileID: 0}
+  i4: {fileID: 0}
+  t4: {fileID: 0}
 --- !u!1 &1858524916
 GameObject:
   m_ObjectHideFlags: 0

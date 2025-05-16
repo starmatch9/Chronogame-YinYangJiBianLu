@@ -34,6 +34,7 @@ public class Move : MonoBehaviour
             Jump();
         }
     }
+
     //◊Û”““∆∂Ø
     private void MoveBody()
     {
