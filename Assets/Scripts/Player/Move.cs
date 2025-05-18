@@ -74,21 +74,21 @@ public class Move : MonoBehaviour
     //Åö×²¼ì²â
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Platform") || collision.gameObject.layer == LayerMask.NameToLayer("YinDoor") || collision.gameObject.layer == LayerMask.NameToLayer("YangDoor"))
         {
             onPlatform = true;
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Platform") || collision.gameObject.layer == LayerMask.NameToLayer("YinDoor") || collision.gameObject.layer == LayerMask.NameToLayer("YangDoor"))
         {
             onPlatform = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Platform"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Platform") || collision.gameObject.layer == LayerMask.NameToLayer("YinDoor") || collision.gameObject.layer == LayerMask.NameToLayer("YangDoor"))
         {
             onPlatform = false;
         }
