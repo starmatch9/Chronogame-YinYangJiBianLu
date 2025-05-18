@@ -1767,7 +1767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!1 &201851881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4233,7 +4232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!1 &449633588
 GameObject:
   m_ObjectHideFlags: 0
@@ -9558,7 +9556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!1 &1304932023
 GameObject:
   m_ObjectHideFlags: 0
@@ -10569,7 +10566,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!1 &1435832425
 GameObject:
   m_ObjectHideFlags: 0
@@ -12201,7 +12197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!1 &1661861960
 GameObject:
   m_ObjectHideFlags: 0

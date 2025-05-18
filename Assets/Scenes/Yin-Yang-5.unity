@@ -174,7 +174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &52177291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6184,7 +6183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
-  volume: 0.3
 --- !u!114 &789275107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6622,7 +6620,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &865267595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15682,7 +15679,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &1044792106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16661,7 +16657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &1334979572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17767,7 +17762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4fc37d30ae7a3439cc43614fbc3e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cc: {fileID: 0}
+  cc: {fileID: 2015578063}
   yangDoorCol: {fileID: 2115721341}
   yinDoorCol: {fileID: 1867060194}
 --- !u!1 &1797788995
