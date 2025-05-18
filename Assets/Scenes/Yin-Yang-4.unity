@@ -1570,7 +1570,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &463550046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13838,8 +13837,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 675146231
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c7baf0c9af4b4d640b4b29d523735dc1, type: 3}
   m_Color: {r: 1, g: 0.9669811, b: 0.9669811, a: 1}
@@ -14371,7 +14370,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &1339420533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18811,7 +18809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &1754825038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19606,7 +19603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
-  volume: 0.3
 --- !u!114 &1861819092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20017,7 +20013,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &1897529925
 MonoBehaviour:
   m_ObjectHideFlags: 0
