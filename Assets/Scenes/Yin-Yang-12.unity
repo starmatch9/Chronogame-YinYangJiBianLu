@@ -3356,11 +3356,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "       \u5929\u5730\u5408\u800C\u4E07\u7269\u751F\uFF0C\u9634\u9633\u63A5\u800C\u53D8\u5316\u8D77\uFF0C\u6027\u4F2A\u5408\u800C\u5929\u4E0B\u6CBB\u3002\n                                      
-    \u2014\u2014\u300A\u8340\u5B50\u300B"
+  m_text: "\u4E07\u7269\u8D1F\u9634\u800C\u62B1\u9633\uFF0C\u51B2\u6C14\u4EE5\u4E3A\u548C\u3002\n                                  
+    \u2014\u2014\u300A\u9053\u5FB7\u7ECF\u300B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0463c4e0ce58d8e49bcd5b4f89c4c051, type: 2}
-  m_sharedMaterial: {fileID: -3171565285828675274, guid: 0463c4e0ce58d8e49bcd5b4f89c4c051, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2956c0d03c727be47975f13db3b4ebc4, type: 2}
+  m_sharedMaterial: {fileID: 3831087482036010448, guid: 2956c0d03c727be47975f13db3b4ebc4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19439,8 +19439,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 1886179367}
-  textContent1: "       \u5929\u5730\u5408\u800C\u4E07\u7269\u751F\uFF0C\u9634\u9633\u63A5\u800C\u53D8\u5316\u8D77\uFF0C\u6027\u4F2A\u5408\u800C\u5929\u4E0B\u6CBB\u3002"
-  textContent2: "                                       \u2014\u2014\u300A\u8340\u5B50\u300B"
+  textContent1: "\u4E07\u7269\u8D1F\u9634\u800C\u62B1\u9633\uFF0C\u51B2\u6C14\u4EE5\u4E3A\u548C\u3002"
+  textContent2: "                                   \u2014\u2014\u300A\u9053\u5FB7\u7ECF\u300B"
   textContent3: 
   textMeshPro: {fileID: 724234960}
 --- !u!114 &1861819090
