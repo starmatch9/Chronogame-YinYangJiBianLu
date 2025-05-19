@@ -427,6 +427,8 @@ public class FadeEffect : MonoBehaviour
         float elapsedTime = 0f;
         //初始音量
         audio.volume = startVolume;
+        //自动播放音乐
+        audio.Play();
         while (elapsedTime < durationFadeIn)
         {
             //按照百分比从0到1插值
@@ -468,6 +470,8 @@ public class FadeEffect : MonoBehaviour
         float elapsedTime = 0f;
         //初始音量
         audio.volume = startVolume;
+        //自动播放音乐
+        audio.Play();
         while (elapsedTime < durationFadeIn)
         {
             //按照百分比从0到1插值
