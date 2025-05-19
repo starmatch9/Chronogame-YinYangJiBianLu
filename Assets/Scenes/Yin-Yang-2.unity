@@ -2079,7 +2079,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &463550046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3271,8 +3270,8 @@ Transform:
   m_GameObject: {fileID: 809473569}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1366737339}
@@ -12220,7 +12219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &1339420533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16238,7 +16236,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1}
+  m_Offset: {x: 0, y: -1.3}
   serializedVersion: 2
   m_Radius: 0.3
 --- !u!70 &1704906324
@@ -16273,9 +16271,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2, y: 1}
-  m_Direction: 0
+  m_Offset: {x: 0.1, y: -0.6}
+  m_Size: {x: 1.6, y: 1.4}
+  m_Direction: 1
 --- !u!4 &1704906325
 Transform:
   m_ObjectHideFlags: 0
@@ -16285,7 +16283,7 @@ Transform:
   m_GameObject: {fileID: 1704906319}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.03, y: 5.42, z: -0.00069760485}
+  m_LocalPosition: {x: -12.32, y: 5.71, z: -0.00069760485}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16397,7 +16395,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &1754825038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17307,7 +17304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
-  volume: 0.3
 --- !u!114 &1861819092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17589,7 +17585,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  volume: 0.3
 --- !u!114 &1897529925
 MonoBehaviour:
   m_ObjectHideFlags: 0
