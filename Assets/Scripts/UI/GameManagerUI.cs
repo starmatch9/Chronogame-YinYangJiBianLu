@@ -55,7 +55,8 @@ public class GameManagerUI : MonoBehaviour
     public void exitGame()
     {
         //删掉首次播放开头动画的标志
-        PlayerPrefs.DeleteKey("video");
+        //永不删除，以后一台电脑只出现一次
+        //PlayerPrefs.DeleteKey("video");
 
         //退出
         Application.Quit();
