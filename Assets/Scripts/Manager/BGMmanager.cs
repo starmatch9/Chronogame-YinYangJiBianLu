@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BGMmanager : MonoBehaviour
 {
@@ -28,8 +29,13 @@ public class BGMmanager : MonoBehaviour
         //设置开始音量为0
         audioSource.volume = 0f;
 
-        //等3秒文字时间后开始播放
-        yield return new WaitForSeconds(3f);
+        string name = SceneManager.GetActiveScene().name;
+        if (PlayerPrefs.GetInt(name, 0) != 1)
+        {
+            //等3秒文字时间后开始播放
+            yield return new WaitForSeconds(3f);
+        }
+
         audioSource.Play();
         //累计时间
         float elapsed = 0;

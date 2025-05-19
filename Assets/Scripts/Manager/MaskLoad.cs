@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -48,11 +50,27 @@ public class MaskLoad : MonoBehaviour
     //游戏开始黑色渐出
     public IEnumerator fade()
     {
-        //引入文字显示
-        string textContent = textContent1 + "\n" + textContent2 +"\n" + textContent3;
-        StartCoroutine(textLoad(textContent));
 
-        yield return new WaitForSeconds(3f);
+
+
+        /*不太好加，可能需要较大改动*/
+        //鼠标点击任意处退出
+        //float skipTime = 0f;
+        //while (!Input.GetMouseButtonDown(0) && skipTime <= 3f) 
+        //{
+        //    skipTime += Time.deltaTime;
+        //    yield return null;
+        //}
+        string name = SceneManager.GetActiveScene().name;
+        if (PlayerPrefs.GetInt(name, 0) != 1)
+        {
+            //引入文字显示
+            string textContent = textContent1 + "\n" + textContent2 + "\n" + textContent3;
+            StartCoroutine(textLoad(textContent));
+            yield return new WaitForSeconds(3f);
+        }
+
+
         //运行时间，用于累加
         float elapsedTime = 0f;
         image.color = new Color(0f, 0f, 0f, 0f);
