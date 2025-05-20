@@ -16603,7 +16603,7 @@ MonoBehaviour:
   durationFadeIn: 2
   durationFadeOut: 2
   awakeStart: 1
-  disableAfterFadeOut: 1
+  disableAfterFadeOut: 0
   stayTime: 4
   startColor: {r: 0, g: 0, b: 0, a: 0}
   endColor: {r: 0, g: 0, b: 0, a: 0}
